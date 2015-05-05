@@ -13,9 +13,11 @@ categories: [image retrieval]
 <embed src="http://player.youku.com/player.php/sid/XNTc3NzQ0NTQw/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
 </object>
 
+**Note**：如果你只是想要特征提取及检索可视化代码，请直接跳到最后。
+
 >MatConvNet is a MATLAB toolbox implementing Convolutional Neural Networks (CNNs) for computer vision applications. It is simple, efficient, and can run and learn state-of-the-art CNNs. Several example CNNs are included to classify and encode images.
 
-MatConvNet是Andrea Vedaldi用Matlab开发的一个卷积网络工具包，相比于[Caffe](caffe.berkeleyvision.org)，这个工具包配置比较简单，而且最近这两年，vgg小组在深度学习领域也是成绩斐然。关于MatConvNet的文档，可以查看[MatConvNet Convolutional Neural Networks for MATLAB]((http://arxiv.org/pdf/1412.4564.pdf)以及[在线文档](http://www.vlfeat.org/matconvnet/)。这里我们主要讲讲怎么配置MatConvNet以及怎样利用在imageNet上已经训练好的模型抽取特征并进行图像检索。
+MatConvNet是Andrea Vedaldi用Matlab开发的一个卷积网络工具包，相比于[Caffe](caffe.berkeleyvision.org)，这个工具包配置比较简单，而且最近这两年，vgg小组在深度学习领域也是成绩斐然。关于MatConvNet的文档，可以查看[MatConvNet Convolutional Neural Networks for MATLAB](http://arxiv.org/pdf/1412.4564.pdf)以及[在线文档](http://www.vlfeat.org/matconvnet/)。这里我们主要讲讲怎么配置MatConvNet以及怎样利用在imageNet上已经训练好的模型抽取特征并进行图像检索。
 
 ##MatConvnet配置
 
