@@ -10,7 +10,7 @@ categories: [image retrieval]
 - Image Retrieval Using Scene Graphs
 - Revisiting Kernelized Locality-Sensitive Hashing for Improved Large-Scale Image Retrieval
 - Early Burst Detection for Memory-Efficient Image Retrieval
-- Deep Semantic Ranking Based Hashing for Multi-Label Image Retrieval
+- Deep Semantic Ranking Based Hashing for Multi-Label Image Retrieval（已读）
 - Query-Adaptive Late Fusion for Image Search and Person Re-identification
 
 ##Hashing关键词
