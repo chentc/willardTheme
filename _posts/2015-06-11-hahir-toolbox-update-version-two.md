@@ -8,16 +8,3 @@ categories: [image retrieval]
 
 此次更新主要是将原来一些结构写得不是很合理的地方重新做了稍微的调整，添加了新的评价指标，截止到该v2.0版，评价指标已经基本涵盖了论文中的常用对比指标，另外还添加了两种新的哈希方法，代码说明文档写得更详细和规范。下面晒晒在Caltech-256上用VGG在imageNet上训练好的模型提取的1024维特征做的一些实验结果。
 
-<p align="center"><img src="https://github.com/willard-yuan/hashing-baseline-for-image-retrieval/blob/master/doc/together_png/128bits.png" alt="precision-recall-64bits"/></p>
-<p align="center">图1: 128位编码</p>
-<p align="center"><img src="https://github.com/willard-yuan/hashing-baseline-for-image-retrieval/blob/master/doc/together_png/64bits.png" alt="precision-recall-64bits"/></p>
-<p align="center">图2: 64位编码</p>
-<p align="center"><img src="https://github.com/willard-yuan/hashing-baseline-for-image-retrieval/blob/master/doc/together_png/32bits.png" alt="precision-recall-64bits"/></p>
-<p align="center">图3：32位编码</p>
-<p align="center"><img src="https://github.com/willard-yuan/hashing-baseline-for-image-retrieval/blob/master/doc/together_png/16bits.png" alt="precision-recall-64bits"/></p>
-<p align="center">图4：16位编码</p>
-<p align="center"><img src="v/8bits.png" alt="precision-recall-64bits"/></p>
-<p align="center">图5：8位编码</p>
-<p align="center"><img src="https://github.com/willard-yuan/hashing-baseline-for-image-retrieval/blob/master/doc/together_png/mAP.png" alt="precision-recall-64bits"/></p>
-<p align="center">图6：不同编码位下mAP曲线(run times = 1)</p>
-
