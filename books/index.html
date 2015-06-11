@@ -1,72 +1,83 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>我的藏书</title>
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./raty/jquery.raty.css">
-    <link rel="stylesheet" href="./css/app.css">
-</head>
-<body>
-<a href="https://github.com/wenzhixin/books" class="fork_me"></a>
+---
+layout: simplePage
+title: Yong Yuan - Reading books
+description: Yong Yuan's reading books. Some of them are my academy research, some are just my interest.
+category: books
+---
 
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button class="navbar-toggle" type="button" data-toggle="collapse"
-                    data-target=".bs-navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">我的藏书</a>
-        </div>
+<link rel="stylesheet" href="../css/bootstrap.min.css">
 
-        <div class="collapse navbar-collapse bs-navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="http://wenzhixin.net.cn">文翼的博客</a></li>
-                <li><a href="http://repos.wenzhixin.net.cn">个人开源项目</a></li>
-                <!-- <li><a href="http://books.wenzhixin.net.cn">我的藏书</a></li> -->
-                <li><a href="http://travels.wenzhixin.net.cn">游遍广州</a></li>
-                <li><a href="http://wenzhixin.net.cn/about">关于我</a></li>
-            </ul>
-        </div>
-    </div>
+<script type="text/javascript"  src="../js/jquery.min.js"></script>
+<script type="text/javascript"  src="../js/douban.api.js"></script>
+<style>
+.main{padding-right:0;}
+.douban-title{color:#1BAF69;margin-bottom:-20px;text-shadow:0 0 1px;letter-spacing:3px;}
+.douban-list ul li{list-style:none outside none;width:115px;margin-top:20px;float:left;}
+.douban-list ul li img{width:90px;height:120px;border:solid 1px #DDD;padding:1px;}
+.clear{clear:both;}@media (max-width:875px){.douban-title{letter-spacing:1px;margin-bottom:-15px;}
+.douban-list ul li{width:100px;margin-top:5px;}}
+</style>
+<div class="container">
+<div id="archives">
+  <div id="douban"></div>
+</div>
+<br/><br/>
 </div>
 
-<div class="wrapper">
-    <div id="app" class="container">
-        <div id="info"></div>
-        <div id="list">Loading...</div>
-    </div>
-</div>
+<script>
+var dbapi=new DoubanApi();$(document).ready(function(){dbapi.show()});
+</script>
 
-<div class="footer">
-    <p>
-        Copyright © 2012-2014 wenzhixin.net.cn
+<div class="separator"></div>
+
+  <div  style="border-bottom: 1px solid #ddd"></div>
+    <footer>
+    <p class="linkings">
+        Friend: <a href="http://peqiu.com/">Xuguo Tang</a>&nbsp&nbsp&nbsp&nbsp<a href="http://raphael-mou.github.io/">Lichao Mou</a>&nbsp&nbsp&nbsp&nbsp<a href="http://haobo-lv.github.io/">Haobo Lv</a>&nbsp&nbsp&nbsp&nbsp<a href="http://www.52ml.net/">52ml</a>&nbsp&nbsp&nbsp&nbsp<a href="http://caoyaqiang.com/">cyq</a>&nbsp&nbsp&nbsp&nbsp<a href="http://personal.ee.surrey.ac.uk/Personal/R.Hu/">Rui Hu</a>&nbsp&nbsp&nbsp&nbsp<a href="http://www.pyimagesearch.com/">pyimagesearch</a>&nbsp&nbsp&nbsp&nbsp<a href="http://bean.logdown.com/">bean</a>&nbsp&nbsp&nbsp&nbsp<a href="http://ml.memect.com/">machine learning dairy</a>
     </p>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="this-info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">我的藏书项目信息</h4>
-            </div>
-            <div class="modal-body">
-                <ol>
-                    <li>本项目由 bower + requirejs + backbone + undersore 实现。</li>
-                    <li>Github 地址：<a href="https://github.com/wenzhixin/books">wenzhixin/books</a>。</li>
-                </ol>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-
-<script data-main="js/main" src="./js/require.js"></script>
-</body>
-</html>
+    <p class="linkings">
+        Database: <a href="http://horatio.cs.nyu.edu/mit/tiny/data/index.html">Tiny</a>&nbsp&nbsp&nbsp&nbsp<a href="http://www.vision.caltech.edu/Image_Datasets/Caltech256/">Caltech256</a>&nbsp&nbsp&nbsp&nbsp<a href="http://press.liacs.nl/mirflickr/">MIRFLICKR-1M</a>&nbsp&nbsp&nbsp&nbsp<a href="http://cs.joensuu.fi/sipu/datasets/">Clustering datasets</a>&nbsp&nbsp&nbsp&nbsp<a href="http://www.vis.uky.edu/~stewe/ukbench/">Ukbench</a>&nbsp&nbsp&nbsp&nbsp<a href="http://www.imageclef.org/">ImageCLEF</a>&nbsp&nbsp&nbsp&nbsp<a href="http://lear.inrialpes.fr/~jegou/data.php#holidays/">INRIA</a>
+    </p>
+    <p class="linkings">
+        Utils: <a href="http://rogerioferis.com/VisualRecognitionAndSearch2014/Resources.html">rogerioferis</a>&nbsp&nbsp&nbsp&nbsp<a href="http://caffe.berkeleyvision.org/">Caffe</a>&nbsp&nbsp&nbsp&nbsp<a href="http://scikit-learn.org/stable/index.html">scikit-learn</a>&nbsp&nbsp&nbsp&nbsp<a href="http://www.astroml.org/index.html">AstroML</a></a>&nbsp&nbsp&nbsp&nbsp<a href="http://scikit-image.org/">scikit-image</a>
+    </p>
+    <!--p>
+      Made with <a href="http://jekyllrb.com/">Jekyll</a>,
+      hosted on <a href="https://github.com/willard-yuan/willard-yuan.github.io">Github Pages</a>. Theme inspired by <a href="http://ssaunier.github.io">ssaunier</a>.
+    </p-->
+    </p>
+      <a href="http://www.easycounter.com/"><img src="http://www.easycounter.com/counter.php?willard"border="0" alt="Website Hit Counter"></a> since August 2013.
+    </p>
+    <ul class="links">
+      <!--li>
+        <a href="https://github.com/willard-yuan" title="See my code on GitHub">
+          <i class="icon-github"></i>
+        </a>
+      </li>	  
+      <li>
+        <a href="https://twitter.com/intent/follow?screen_name=yongyuan001" title="Follow me on Twitter">
+          <i class="icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/sebastiensaunier" title="Connect with me on LinkedIn">
+          <i class="icon-linkedin"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://plus.google.com/+SebastienSaunier?rel=author" title="I need this link for authorship reasons">
+          <i class="icon-google-plus"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://pinboard.in/u:ssaunier" title="Browse my bookmarks about Programming">
+          <i class="icon-bookmarks"></i>
+        </a>
+      </li>
+      <li>
+        <a href="/feed.xml" title="Subscribe to my blog with RSS">
+          <i class="icon-feed"></i>
+        </a>
+      </li-->
+    </ul>
+  </footer>

@@ -28,6 +28,7 @@ body {
   background-color:#ffffff;
   margin-bottom: 5px;  /*自定义段落与段落之间的间距*/
   line-height: 170%; /*自定义body对象行与行的间距*/
+  font-size: 100%;
 }
 
 /*.top-bar {
@@ -64,8 +65,8 @@ h1 small {
 
 h2 { 
 	font-size:1.5em;
-	margin:.83em 0;
-	margin-top: 0;
+	/*margin:.83em 0;*/
+	margin: 30px 0px 0.3em;
 }
 
 h3 {
@@ -253,7 +254,7 @@ header .logo a, header .logo a:hover {
 }
 
 @media (max-width: 700px) {
-  .inner, pre code, .post > * {
+  .inner, pre code, footer, .post > * {
     margin-left: 18px !important;
     margin-right: 18px !important;
     width: auto !important;
@@ -286,8 +287,10 @@ nav a {
   display: inline-block;
   margin-right: 1.2em;
   padding-bottom: 0.2em;
-  font-weight: normal;
+  /*font-weight: normal;*/
+  font-weight: thick;
   border-bottom: 3px solid transparent;
+  font-size: 100%;
 }
 
 nav a:last-child {
@@ -352,7 +355,7 @@ footer .linkings {
   width: 100%;
   display: block;
   border: none;
-  line-height:100%
+  line-height:140%
 }
 
 footer .links {
@@ -529,7 +532,7 @@ figure .two-third {
 
 /* Quotes设置引用文字时的格式 */
 blockquote {
-  margin: 1em 0 1em -1em;
+  margin: 1em 0 1em 0em;
   color: #666;
   border-left: 0.4em solid #3073b3;
   padding-left: 0.6em;
@@ -541,7 +544,7 @@ blockquote {
   margin-bottom: 0.3em;
   font-style: italic;
   margin-top: 4em;
-  margin-bottom: 6em;
+  /*margin-bottom: 6em;*/
   border: 1px solid #eee;
   border-radius: 5px;
   padding: 0 1em;
@@ -763,4 +766,3 @@ fieldset[disabled] .btn-primary.active {
 .listing-item a{padding:.2em 1em;}
 .listing-item time{color:#999999;}
 .listing-seperator{font-weight:bold;}
-
